@@ -1,3 +1,20 @@
+// =============================================================================
+// TODO – PLACEHOLDERS FOR THE CLIENT TO FILL IN
+// =============================================================================
+// Before going live, search this file for every item below and replace it with
+// real information supplied by the client:
+//
+//  1. [CLIENT PHONE]        – Business phone number
+//  2. [CLIENT PHONE HREF]   – Phone number in tel: format, e.g. tel:1300000000
+//  3. [CLIENT EMAIL]        – Contact / enquiry email address
+//  4. [CLIENT EMAIL HREF]   – e.g. mailto:info@yourdomain.com
+//  5. [CLIENT ADDRESS]      – Full street address
+//  6. Projects section      – Replace the three generic project items with real
+//                             project details (see "// replace with real client projects" comments)
+//  7. Testimonial section   – Replace "Client stories coming soon." with a real quote
+//  8. Stats / "Why" section – Replace Expertise / Trust / Quality blurbs if needed
+// =============================================================================
+
 export interface NavLink {
   label: string;
   href: string;
@@ -56,100 +73,81 @@ export interface FooterColumn {
 export const siteData = {
   company: {
     name: "Solarshop",
-    tagline: "Own your energy. Love your bill.",
+    tagline: "Clean energy, built on trust.",
     shortDescription:
-      "Premium, trustworthy solar power and smart battery storage engineered for lifelong reliability and transparent return on investment.",
+      "Solarshop is your partner for professional solar solutions. We help homes and businesses move to clean, reliable power with clear advice and expert service.",
     logoPath: "/Likley_Logo.png",
-    phone: "(08) 8345 7200",
-    phoneHref: "tel:+61883457200",
-    email: "hello@solarshop.com.au",
-    emailHref: "mailto:hello@solarshop.com.au",
-    address: "142 Greenhill Road, Unley SA 5061",
-    hours: "Monday – Friday: 8:00 AM – 5:30 PM",
-    abn: "ABN 48 102 938 471",
+    phone: "[CLIENT PHONE]",
+    phoneHref: "[CLIENT PHONE HREF]",
+    email: "[CLIENT EMAIL]",
+    emailHref: "[CLIENT EMAIL HREF]",
+    address: "[CLIENT ADDRESS]",
+    hours: "[CLIENT BUSINESS HOURS]",
+    abn: "",
   },
 
   navigation: [
     { label: "Solutions", href: "#solutions" },
     { label: "Why Solarshop", href: "#why-solarshop" },
     { label: "How It Works", href: "#how-it-works" },
-    { label: "Projects", href: "#projects" },
+    { label: "Our Work", href: "#projects" },
     { label: "FAQ", href: "#faq" },
   ] as NavLink[],
 
   hero: {
-    badge: "100% Accredited Australian Clean Energy",
-    headlineStart: "Own your energy.",
-    headlineAccent: "Love your bill.",
-    lead: "We design, install, and support bespoke residential and commercial solar systems with smart battery storage. Built with Tier-1 components and backed by an industry-leading 25-year panel warranty.",
+    badge: "Solar solutions you can trust",
+    headlineStart: "Clean energy,",
+    headlineAccent: "built on trust.",
+    lead: "Solarshop is your partner for professional solar solutions. We help homes and businesses move to clean, reliable power with clear advice and expert service.",
     primaryCta: {
-      label: "Estimate your savings",
-      href: "#calculator",
+      label: "Request a quote",
+      href: "#contact",
     },
     secondaryCta: {
-      label: "Get a free quote",
-      href: "#contact",
+      label: "Explore solutions",
+      href: "#solutions",
     },
   },
 
   trustStrip: [
     {
-      title: "Certified installers",
-      description: "CEC accredited master electricians",
+      title: "Expert solar advice",
+      description: "Guidance tailored to your property and energy needs",
       icon: "shield",
     },
     {
-      title: "25-year panel warranty",
-      description: "Linear performance guarantee",
+      title: "Professional installation",
+      description: "Carried out by qualified, experienced installers",
       icon: "award",
     },
     {
-      title: "Licensed & insured",
-      description: "Full public liability & engineering",
+      title: "Reliable aftercare",
+      description: "Ongoing support to keep your system performing",
       icon: "check",
     },
     {
-      title: "Tier-one equipment",
-      description: "Bloomberg Tier 1 modules only",
+      title: "Clear communication",
+      description: "Straightforward information at every step",
       icon: "sun",
-    },
-    {
-      title: "Local after-sales care",
-      description: "Direct in-house technician support",
-      icon: "users",
     },
   ],
 
-  calculator: {
-    title: "Estimate your savings",
-    subtitle: "Select your typical monthly power bill to see your projected energy independence.",
-    minBill: 40,
-    maxBill: 800,
-    defaultBill: 280,
-    step: 10,
-    currency: "$",
-    assumedCost: 14000,
-    savingsFactor: 0.72,
-    disclaimer:
-      "Illustrative estimate based on typical daytime solar irradiation, 72% self-consumption/offset ratio, and a standard $14,000 turnkey residential system. Exact savings depend on roof orientation, shading, and local feed-in tariffs.",
-  },
-
   solutions: {
-    badge: "Engineered Solutions",
-    heading: "Bespoke clean power systems built for your exact usage",
+    badge: "Our Services",
+    heading: "Solar solutions for every property",
     subtitle:
-      "Every building has unique sun exposure and energy consumption patterns. We match premium hardware to your real daily needs.",
+      "Whether you're a homeowner or a business, we design and install the right solar system for your needs.",
     items: [
       {
         id: "residential",
         tag: "Homes & Families",
         title: "Residential Solar",
         description:
-          "High-efficiency rooftop panels crafted for contemporary Australian homes. Cut your quarterly electricity bills and take charge of your household energy budget.",
+          "We design and install solar systems for homes, helping families generate their own clean electricity and reduce their reliance on the grid.",
         features: [
-          "High-efficiency all-black modules",
-          "Individual panel shade optimization",
-          "Intuitive smartphone monitoring app",
+          "Tailored system design for your home",
+          "Quality panels and components",
+          "Professional installation and handover",
         ],
         bgClass: "bg-sagetint text-ink",
         colSpanClass: "col-span-1 lg:col-span-4",
@@ -160,11 +158,11 @@ export const siteData = {
         tag: "Energy Independence",
         title: "Battery Storage",
         description:
-          "Capture excess solar power produced at midday and use it when the sun sets. Keeps essential circuits powered during grid outages.",
+          "Add battery storage to your solar system to store the energy you generate and use it when you need it most.",
         features: [
-          "Instant blackout transition (UPS)",
-          "Time-of-use tariff scheduling",
-          "Modular capacity expandable anytime",
+          "Store solar energy for use day or night",
+          "Greater independence from the grid",
+          "Scalable to suit your needs",
         ],
         bgClass: "bg-goldtint text-ink",
         colSpanClass: "col-span-1 lg:col-span-2",
@@ -175,11 +173,11 @@ export const siteData = {
         tag: "Enterprise & Industry",
         title: "Commercial Solar",
         description:
-          "Convert unutilized warehouse and commercial roof space into a major revenue-saving asset with accelerated tax depreciation.",
+          "We help businesses make the most of their roof space with commercial solar installations designed for operational efficiency.",
         features: [
-          "High peak-demand shaving",
-          "Three-phase industrial inverters",
-          "Feasibility modeling & PPA options",
+          "Custom design for commercial properties",
+          "Suitable for a wide range of business types",
+          "Professional project management",
         ],
         bgClass: "bg-skytint text-ink",
         colSpanClass: "col-span-1 lg:col-span-2",
@@ -188,13 +186,13 @@ export const siteData = {
       {
         id: "service",
         tag: "Lifelong Care",
-        title: "Service & Monitoring",
+        title: "Service & Maintenance",
         description:
-          "Proactive digital system analytics, preventative safety checks, panel cleaning, and priority on-site servicing by our local technician fleet.",
+          "We provide ongoing service and maintenance to keep your solar system running safely and efficiently over the long term.",
         features: [
-          "24/7 automated generation alerts",
-          "Annual thermal imaging safety checks",
-          "Fast warranty replacement processing",
+          "System health checks and inspections",
+          "Fault diagnosis and repairs",
+          "Performance monitoring support",
         ],
         bgClass: "bg-claytint text-ink",
         colSpanClass: "col-span-1 lg:col-span-4",
@@ -205,87 +203,90 @@ export const siteData = {
 
   whySolarshop: {
     badge: "The Solarshop Difference",
-    heading: "Why homeowners & businesses trust Solarshop",
+    heading: "Why homes & businesses choose Solarshop",
     lead:
-      "For over a decade, we have remained independent and focused on quality. No pressure tactics, no confusing jargon, and zero sub-contracting.",
+      "We are committed to honest advice, quality workmanship, and reliable support — from your first enquiry to long after installation.",
     stats: [
       {
-        value: "1,200+",
-        label: "Systems installed",
-        description: "Powering homes, schools, and commercial enterprises across the region.",
+        value: "Expertise",
+        label: "Experienced team",
+        description:
+          "Our team brings knowledge and skill to every solar project, large or small.",
         borderColorClass: "border-gold",
       },
       {
-        value: "18 MW",
-        label: "Clean energy deployed",
-        description: "Generates millions of clean kWh while keeping utility bills low.",
+        value: "Trust",
+        label: "Honest advice",
+        description:
+          "We give you clear, straightforward information so you can make the right decision for your property.",
         borderColorClass: "border-sage",
       },
       {
-        value: "25 yrs",
-        label: "Panel warranty",
-        description: "Comprehensive 25-year manufacturer performance guarantee you can bank on.",
+        value: "Quality",
+        label: "Lasting results",
+        description:
+          "We use quality equipment and professional installation practices to deliver reliable outcomes.",
         borderColorClass: "border-sky",
       },
     ] as StatItem[],
     points: [
       {
-        title: "Transparent feasibility modeling",
+        title: "Tailored system design",
         description:
-          "We examine your actual 12-month interval meter history to provide an honest, accurate yield projection before any paperwork is signed.",
+          "Every property is different. We take the time to understand your energy needs and design a system that suits your home or business.",
       },
       {
-        title: "Direct in-house electricians",
+        title: "Professional installation",
         description:
-          "Every technician on your roof is a full-time, licensed Solarshop team member who respects your property.",
+          "Our qualified installers work safely and carefully, respecting your property throughout the process.",
       },
       {
-        title: "Tier-1 hardware only",
+        title: "Quality equipment",
         description:
-          "We exclusively deploy Bloomberg Tier 1 solar modules and globally trusted smart inverters built for extreme climates.",
+          "We source reliable solar panels and components to give you a system built to last.",
       },
       {
-        title: "Prompt local support",
+        title: "Ongoing support",
         description:
-          "Need assistance? You talk to an experienced solar specialist in our local office, not an overseas call center.",
+          "We're here to help after installation. Contact us with questions or if you need service.",
       },
     ],
   },
 
   howItWorks: {
-    badge: "Our Simple Process",
-    heading: "From consultation to lifelong clean energy",
-    subtitle: "A smooth four-step roadmap designed around clear communication and zero stress.",
+    badge: "Our Process",
+    heading: "From consultation to clean energy",
+    subtitle: "A simple, clear process designed to make going solar easy.",
     steps: [
       {
         number: "01",
         title: "Consultation",
         description:
-          "We review your energy usage, roof orientation, and future power plans (like EV charging) to understand your exact requirements.",
+          "We start with a conversation about your property, energy use, and goals to understand what you need.",
         accentColor: "text-forest",
         badgeBg: "bg-sagetint",
       },
       {
         number: "02",
-        title: "Custom design",
+        title: "Design",
         description:
-          "Our solar engineers model 3D sun angles, simulate seasonal shade, and tailor a custom electrical layout for maximum efficiency.",
+          "We design a solar system tailored to your property and requirements.",
         accentColor: "text-gold",
         badgeBg: "bg-goldtint",
       },
       {
         number: "03",
-        title: "Expert install",
+        title: "Installation",
         description:
-          "Our accredited electricians complete your installation cleanly in a single day, adhering to strict safety and building standards.",
+          "Our qualified team installs your system professionally and safely.",
         accentColor: "text-sky",
         badgeBg: "bg-skytint",
       },
       {
         number: "04",
-        title: "Lifelong care",
+        title: "Support",
         description:
-          "We handle all grid authority connection approvals, walk you through the mobile tracking app, and provide lifetime care.",
+          "We're here to help after installation with any questions or ongoing service needs.",
         accentColor: "text-clay",
         badgeBg: "bg-claytint",
       },
@@ -293,45 +294,48 @@ export const siteData = {
   },
 
   projects: {
-    badge: "Case Studies",
-    heading: "Proven results across residential and commercial roofs",
-    subtitle: "See how customized Solarshop systems are delivering clean, reliable electricity every day.",
+    badge: "Our Work",
+    heading: "Solar installations we're proud of",
+    subtitle: "A selection of residential, commercial and agricultural projects completed by our team.",
     items: [
+      // replace with real client projects
       {
-        id: "project-hillside",
-        title: "Hillside family home 8.4 kW",
-        category: "Residential Solar & Storage",
-        specs: "8.4 kW Array • 10 kWh Lithium Battery",
-        location: "Adelaide Hills, SA",
-        savings: "85% reduction in annual grid bills",
+        id: "project-residential",
+        title: "Residential installation",
+        category: "Residential Solar",
+        specs: "",
+        location: "",
+        savings: "",
         description:
-          "A multi-orientation residential rooftop array coupled with intelligent battery storage that runs the household through evenings and blackouts.",
+          "A rooftop solar installation completed for a family home, designed to suit the property's energy needs.",
         badgeBg: "bg-sagetint",
         badgeText: "text-forest",
         imageIndex: 0,
       },
+      // replace with real client projects
       {
-        id: "project-warehouse",
-        title: "Warehouse rooftop array 120 kW",
-        category: "Commercial Logistics Hub",
-        specs: "120 kW High-Yield Commercial Array",
-        location: "Wingfield Industrial Park",
-        savings: "Payback achieved in 3.4 years",
+        id: "project-commercial",
+        title: "Commercial installation",
+        category: "Commercial Solar",
+        specs: "",
+        location: "",
+        savings: "",
         description:
-          "A high-output commercial rooftop solar array offsetting heavy daytime machinery consumption and refrigeration loads.",
+          "A commercial rooftop solar system installed to help a business reduce its energy costs.",
         badgeBg: "bg-skytint",
         badgeText: "text-sky",
         imageIndex: 1,
       },
+      // replace with real client projects
       {
-        id: "project-farm",
-        title: "Farm ground-mount 60 kW",
-        category: "Agricultural Enterprise",
-        specs: "60 kW Ground Mount • Microinverters",
-        location: "Barossa Valley, SA",
-        savings: "Zero grid power during daytime irrigation",
+        id: "project-agricultural",
+        title: "Agricultural installation",
+        category: "Agricultural Solar",
+        specs: "",
+        location: "",
+        savings: "",
         description:
-          "A heavy-duty ground-mounted array optimized to power deep-well water pumps and winery cooling systems during peak summer rates.",
+          "A ground-mounted solar installation designed to support the energy needs of an agricultural property.",
         badgeBg: "bg-claytint",
         badgeText: "text-clay",
         imageIndex: 2,
@@ -340,11 +344,11 @@ export const siteData = {
   },
 
   testimonial: {
-    quote:
-      "Solarshop gave us what three other companies couldn't: complete transparency. Our bill dropped from $840 down to $112 a quarter, and the installation team treated our home with incredible respect.",
-    author: "Marcus & Elena Vance",
-    role: "Homeowners in Stirling, SA",
-    highlight: "8.4 kW system + 10 kWh battery • Installed 2024",
+    // TODO: Replace with a real client quote when available
+    quote: "Client stories coming soon.",
+    author: "",
+    role: "Verified customer",
+    highlight: "",
   },
 
   faq: {
@@ -353,54 +357,53 @@ export const siteData = {
     subtitle: "Got questions? We're here with straightforward, honest answers.",
     items: [
       {
-        question: "How much will a solar and battery system actually save me?",
+        question: "How do I know if solar is right for my property?",
         answer:
-          "Most residential clients save between 65% and 85% on their power bills. For a household spending $280 to $350 per month on electricity, an 8 kW system typically delivers around $2,400 to $3,000 in yearly savings. By adding battery storage, you can utilize clean solar power well past sunset and avoid paying peak evening utility tariffs.",
+          "Every property is different, and the best way to find out is to speak with us. We'll assess your roof, energy use, and circumstances to give you honest, no-pressure advice. Contact us for details specific to your property.",
       },
       {
-        question: "What happens on cloudy or rainy days?",
+        question: "What happens on cloudy or overcast days?",
         answer:
-          "Solar panels operate on daylight (photons), not direct heat. On overcast days, Tier-1 panels continue to generate between 20% and 40% of their rated output depending on cloud density. If your system is paired with a battery, your home automatically taps stored clean energy first before drawing any grid power.",
+          "Solar panels continue to generate electricity in cloudy conditions, though output will vary. We'll explain what to expect for your location during the consultation. Contact us for details specific to your property.",
       },
       {
-        question: "How does the 25-year warranty work if something breaks?",
+        question: "What does the installation process involve?",
         answer:
-          "Our panels come with a 25-year performance warranty ensuring at least 84.8% of day-one output at year 25. Inverters carry 10 to 15-year comprehensive manufacturer warranties. Solarshop also provides an in-house 10-year workmanship guarantee. If a component underperforms, our local team handles the diagnostics and replacement directly—no dealing with overseas manufacturers.",
+          "Once your system is designed and approved, our qualified team will carry out the installation professionally and safely. We'll keep you informed throughout the process and walk you through the system at handover.",
       },
       {
-        question: "How long does the installation take, and will my power be cut off?",
+        question: "What support is available after installation?",
         answer:
-          "A typical residential installation (6.6 kW to 10 kW) is completed in a single day by our certified in-house electricians. Your mains power will only need to be turned off for roughly 1 to 2 hours while we safely connect the solar inverter to your main switchboard. We notify you well in advance to ensure minimal disruption.",
+          "We offer ongoing service and maintenance to keep your system in good shape. If you have questions or need assistance at any point, our team is here to help. Contact us for details specific to your situation.",
       },
     ] as FaqItem[],
   },
 
   contact: {
-    badge: "Start Your Transition",
-    heading: "Ready to own your energy? Let's build your custom solar quote.",
+    badge: "Get In Touch",
+    heading: "Ready to explore solar? Let's have a conversation.",
     subtitle:
-      "Send us a quick message or upload your latest bill details. One of our clean energy engineers will prepare a transparent, obligation-free proposal tailored to your property.",
+      "Send us a message and one of our team will be in touch to discuss your property and options — no obligation, no pressure.",
     interests: [
       "Residential Solar (Home)",
       "Battery Storage System",
-      "Commercial Solar Array",
-      "System Upgrade & Servicing",
-      "General Inquiry",
+      "Commercial Solar",
+      "Service & Maintenance",
+      "General Enquiry",
     ] as string[],
   },
 
   footer: {
-    copyright: "© 2026 Solarshop Australia Pty Ltd. All rights reserved.",
-    disclaimer:
-      "Electrical Contractor Licence: PGE 298412 • Clean Energy Council Approved Solar Retailer.",
+    copyright: "© Solarshop. All rights reserved.",
+    disclaimer: "Licensed & insured solar installers.",
     columns: [
       {
         title: "Solutions",
         links: [
           { label: "Residential Solar", href: "#solutions" },
           { label: "Battery Storage", href: "#solutions" },
-          { label: "Commercial Arrays", href: "#solutions" },
-          { label: "Maintenance & Care", href: "#solutions" },
+          { label: "Commercial Solar", href: "#solutions" },
+          { label: "Service & Maintenance", href: "#solutions" },
         ],
       },
       {
@@ -408,17 +411,16 @@ export const siteData = {
         links: [
           { label: "Why Solarshop", href: "#why-solarshop" },
           { label: "Our Process", href: "#how-it-works" },
-          { label: "Recent Projects", href: "#projects" },
+          { label: "Our Work", href: "#projects" },
           { label: "Frequently Asked Questions", href: "#faq" },
         ],
       },
       {
-        title: "Resources",
+        title: "Get Started",
         links: [
-          { label: "Savings Calculator", href: "#calculator" },
-          { label: "Clean Energy Rebates", href: "#faq" },
-          { label: "Warranty Information", href: "#why-solarshop" },
-          { label: "Free System Assessment", href: "#contact" },
+          { label: "Request a Quote", href: "#contact" },
+          { label: "Explore Solutions", href: "#solutions" },
+          { label: "Contact Us", href: "#contact" },
         ],
       },
       {

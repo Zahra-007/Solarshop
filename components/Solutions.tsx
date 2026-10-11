@@ -83,10 +83,6 @@ export function Solutions() {
                     loading="lazy"
                     className="object-cover group-hover:scale-102 transition-transform duration-500"
                   />
-                  {/* Discreet credit badge on light overlay */}
-                  <div className="absolute bottom-2.5 right-2.5 bg-paper/90 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-soft border border-line">
-                    Photo: {img.photographer}
-                  </div>
                 </div>
 
                 {/* Action CTA link */}

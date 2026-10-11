@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 sm:gap-12 pb-14 border-b border-ivory/15">
           {/* Brand Col */}
           <div className="lg:col-span-2">
-            {/* Logo in dedicated #fbf7ea container */}
+            {/* Logo in ivory container — needed on the dark footer background */}
             <Link
               href="/"
               className="inline-block bg-ivory rounded-2xl p-2.5 sm:p-3 shadow-md transition-opacity hover:opacity-95 mb-6"
@@ -19,7 +19,7 @@ export function Footer() {
             >
               <div className="relative h-9 w-auto flex items-center">
                 <Image
-                  src="/Likley_Logo.png"
+                  src="/logo.png"
                   alt="Solarshop"
                   width={110}
                   height={36}
@@ -33,8 +33,7 @@ export function Footer() {
             </p>
 
             <div className="text-xs text-sagetint/70 space-y-1">
-              <div>{company.abn}</div>
-              <div>{footer.disclaimer}</div>
+              {footer.disclaimer}
             </div>
           </div>
 
@@ -101,16 +100,16 @@ export function Footer() {
           <div>{footer.copyright}</div>
           <div className="flex items-center gap-6">
             <a href="#solutions" className="hover:text-ivory transition-colors">
-              Solar Solutions
+              Solutions
             </a>
             <a href="#why-solarshop" className="hover:text-ivory transition-colors">
-              25-Year Warranty
+              Why Solarshop
             </a>
-            <a href="#calculator" className="hover:text-ivory transition-colors">
-              Savings Calculator
+            <a href="#how-it-works" className="hover:text-ivory transition-colors">
+              Our Process
             </a>
             <a href="#contact" className="hover:text-ivory transition-colors">
-              Free Proposal
+              Contact
             </a>
           </div>
         </div>

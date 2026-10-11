@@ -55,10 +55,6 @@ export function Projects() {
                       {project.category}
                     </span>
                   </div>
-                  {/* Photo Credit */}
-                  <div className="absolute bottom-2.5 right-2.5 bg-paper/90 backdrop-blur-xs px-2 py-0.5 rounded-md text-[10px] text-soft border border-line">
-                    Photo: {img.photographer}
-                  </div>
                 </div>
 
                 {/* Details */}

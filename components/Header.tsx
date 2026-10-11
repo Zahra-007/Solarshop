@@ -44,22 +44,20 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo — transparent-background PNG sits directly on the header */}
           <Link
             href="/"
-            className="flex items-center gap-2 group transition-opacity hover:opacity-90 focus:outline-hidden focus:ring-2 focus:ring-leaf focus:ring-offset-2 rounded-lg"
+            className="transition-opacity hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-leaf focus:ring-offset-2 rounded-lg"
             aria-label="Solarshop Home"
           >
-            <div className="relative h-10 w-auto flex items-center">
-              <Image
-                src="/Likley_Logo.png"
-                alt="Solarshop"
-                width={122}
-                height={40}
-                priority
-                className="h-10 w-auto object-contain"
-              />
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Solarshop"
+              width={130}
+              height={40}
+              priority
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}

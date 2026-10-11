@@ -92,14 +92,14 @@ export function FaqSection() {
         {/* Still have questions banner */}
         <div className="mt-12 text-center bg-sagetint/40 rounded-2xl p-6 border border-sage/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-left">
-            <h4 className="text-base font-bold text-ink">Have a specific question about your roof?</h4>
-            <p className="text-xs sm:text-sm text-soft">Our solar specialists are available Monday to Friday.</p>
+            <h4 className="text-base font-bold text-ink">Have a specific question about your property?</h4>
+            <p className="text-xs sm:text-sm text-soft">Our team is happy to help — get in touch any time.</p>
           </div>
           <a
-            href="tel:+61883457200"
+            href="#contact"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-forest text-ivory font-bold text-sm hover:bg-leaf transition-colors shrink-0 shadow-xs"
           >
-            <span>Call (08) 8345 7200</span>
+            <span>Contact us</span>
           </a>
         </div>
       </div>

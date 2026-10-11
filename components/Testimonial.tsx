@@ -54,9 +54,6 @@ export function Testimonial() {
                 loading="lazy"
                 className="object-cover"
               />
-              <div className="absolute bottom-3 right-3 bg-paper/90 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-soft border border-line">
-                Photo: {wideImg.photographer}
-              </div>
             </div>
           </div>
         </div>
